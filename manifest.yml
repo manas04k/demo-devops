@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-app
+  namespace: default
+spec:
+  containers:
+    - image: manas123k/myimg:v1.0
+      name: go-demo
+      ports:
+      - containerPort: 80
